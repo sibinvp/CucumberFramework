@@ -10,6 +10,6 @@ Feature: Search and place order
 
   Examples:
   | prodName | quantity |
-  | tomato	 | 3			|
+  | tomato	 | 4			|
   
  
