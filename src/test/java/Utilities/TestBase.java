@@ -80,7 +80,7 @@ public class TestBase {
 				driver.manage().window().setSize(new Dimension(1440,900));
 
 			}
-			//driver.manage().window().maximize();
+			driver.manage().window().maximize();
 			// Implicit wait initialized
 			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(6));
 			driver.get(url);
