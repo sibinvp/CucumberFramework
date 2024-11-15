@@ -1,6 +1,14 @@
 name: Java CI with Maven
 
 on:
+  schedule:
+    - cron: '20 11 * * *'  # Run daily at midnight UTC
+  workflow_dispatch:  # Allows manual triggering of the workflow
+    inputs:
+      reason:
+        description: 'Reason for the test run'
+        required: false
+        default: 'Automated Test Run'
   push:
     branches:
       - master
