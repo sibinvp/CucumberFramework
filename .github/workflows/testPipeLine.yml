@@ -34,6 +34,13 @@ jobs:
       - name: Build with Maven
         run: mvn clean test -Dbrowser="chromeheadless"
 
+      - name: Deploy report page to Git Hub
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GH_PAT }}
+          publish_dir: ./test-output/
+       
+
       - name: Set up Git to use PAT
         run: |
           git config --global user.name "github-actions"
