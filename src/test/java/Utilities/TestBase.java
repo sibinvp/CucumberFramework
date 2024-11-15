@@ -69,8 +69,8 @@ public class TestBase {
 				System.out.println("chrome browser selected: "+browserName);
 				
 				if(browserName.contains("headless")) {
-					opt.addArguments("headless");
-					//opt.addArguments("--headless"); // Run in headless mode
+					//opt.addArguments("headless");
+					opt.addArguments("--headless"); // Run in headless mode
 			        opt.addArguments("--disable-gpu"); // Disable GPU hardware acceleration (useful in headless)
 			        opt.addArguments("--window-size=1920x1080"); // Set window size (required for headless mode)
 			        System.out.println("headless");
