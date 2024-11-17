@@ -35,6 +35,7 @@ jobs:
         run: mvn clean test -Dbrowser="chromeheadless"
 
       - name: Deploy report page to Git Hub
+        if: success() || failure()
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GH_PAT }}
