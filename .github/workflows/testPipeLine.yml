@@ -48,6 +48,7 @@ jobs:
         with:
           github_token: ${{ secrets.GH_PAT }}
           publish_dir: ./test-output/SparkReport  # Path to the generated report folder
+          force_orphan: true  # This will force the creation of the gh-pages branch without copying hidden files
 
 
       - name: Update dependency graph
