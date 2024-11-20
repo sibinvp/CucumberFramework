@@ -5,6 +5,7 @@ Feature: Search and place order for products
   Given User is on GreenCart home page
   When user searched with shortname <prodName> and extracted actual name of product
   Then User searched for <prodName> shortname in offer page
+  Then test execute
   And Validate product name in offer page matches with home page.
   
   Examples:
