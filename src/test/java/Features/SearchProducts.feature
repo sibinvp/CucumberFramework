@@ -7,6 +7,7 @@ Feature: Search and place order for products
   Then User searched for <prodName> shortname in offer page
   Then test execute
   And Validate product name in offer page matches with home page.
+  And Test pass
   
   Examples:
   |prodName|
