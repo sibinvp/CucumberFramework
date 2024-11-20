@@ -6,6 +6,7 @@ Feature: Search and place order for products
   When user searched with shortname <prodName> and extracted actual name of product
   Then User searched for <prodName> shortname in offer page
   And Validate product name in offer page matches with home page.
+  And Test pass
   
   Examples:
   |prodName|
