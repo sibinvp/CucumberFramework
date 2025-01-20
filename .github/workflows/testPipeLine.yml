@@ -2,7 +2,7 @@ name: Java CI with Maven
 
 on:
   schedule:
-    - cron: '41 11 15 12 5'  # Run daily at midnight UTC
+    - cron: '08 18 * * *'  # Run daily at midnight UTC
   workflow_dispatch:  # Allows manual triggering of the workflow
     inputs:
       reason:
