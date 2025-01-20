@@ -9,4 +9,4 @@ Feature: Search and place order for products
   Examples:
   |prodName|
   | tom    |
-  | beet   |
+  
